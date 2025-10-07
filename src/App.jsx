@@ -1,11 +1,10 @@
 import "./App.css";
-import Counter from "./components/Counter";
-import Stopwatch from "./components/StopWatch";
+import Form from "./components/Form";
 
 function App() {
   return (
     <>
-      <Stopwatch></Stopwatch>
+      <Form></Form>
     </>
   );
 }
