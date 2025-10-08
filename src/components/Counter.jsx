@@ -1,11 +1,26 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function Counter() {
-  let ref = useRef(0);
-  function handleClick() {
-    ref.current = ref.current + 1;
-    alert("The value is " + ref.current);
-  }
+  const [show, setShow] = useState(true);
+  const ref = useRef(null);
 
-  return <button onClick={handleClick}>Click me!</button>;
+  return (
+    <div>
+      <button
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        Toggle with setState
+      </button>
+      <button
+        onClick={() => {
+          ref.current.remove();
+        }}
+      >
+        Remove from the DOM
+      </button>
+      {show && <p ref={ref}>Hello world</p>}
+    </div>
+  );
 }

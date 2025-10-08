@@ -1,11 +1,11 @@
 import "./App.css";
-import CatFriends from "./components/CatFriends";
-import Form from "./components/Form";
+
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <>
-      <Form></Form>
+      <Counter></Counter>
     </>
   );
 }
