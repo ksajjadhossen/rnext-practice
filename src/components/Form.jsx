@@ -6,6 +6,7 @@ export default function Form() {
 
   function handleClick() {
     inputRef.current.focus();
+    console.log(inputRef.current);
   }
 
   return (
