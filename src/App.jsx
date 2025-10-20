@@ -1,11 +1,15 @@
+import { useState } from "react";
 import "./App.css";
-
-import Counter from "./components/Counter";
+import ChatRoom from "./components/Chatroom";
 
 function App() {
+  const [isShow, setIsShow] = useState(false);
   return (
     <>
-      <Counter></Counter>
+      <button onClick={() => setIsShow((s) => !s)}>
+        {isShow ? "Hide" : "Show"}
+      </button>
+      {isShow && <ChatRoom></ChatRoom>}
     </>
   );
 }
