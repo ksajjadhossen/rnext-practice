@@ -1,15 +1,11 @@
-import { useState } from "react";
 import "./App.css";
-import ChatRoom from "./components/Chatroom";
+import Map from "./components/utils/Map";
 
 function App() {
-  const [isShow, setIsShow] = useState(false);
   return (
     <>
-      <button onClick={() => setIsShow((s) => !s)}>
-        {isShow ? "Hide" : "Show"}
-      </button>
-      {isShow && <ChatRoom></ChatRoom>}
+      {/* Example 1 */}
+      <Map></Map>
     </>
   );
 }
