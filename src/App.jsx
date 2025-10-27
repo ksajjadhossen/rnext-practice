@@ -1,5 +1,6 @@
 import "./App.css";
 import Dialogue from "./components/Dialogue";
+import Scroller from "./components/Scroller";
 import Map from "./components/utils/Map";
 
 function App() {
@@ -9,7 +10,11 @@ function App() {
       {/* <Map></Map> */}
 
       {/* Example 2 */}
-      <Dialogue></Dialogue>
+      {/* <Dialogue></Dialogue> */}
+
+      {/* Example 3 */}
+      <Scroller></Scroller>
+      {/* Example 4 */}
     </>
   );
 }
