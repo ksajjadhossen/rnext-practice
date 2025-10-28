@@ -1,4 +1,6 @@
 import "./App.css";
+import Animation from "./components/Animation";
+import Comments from "./components/Comments";
 import Dialogue from "./components/Dialogue";
 import Scroller from "./components/Scroller";
 import Map from "./components/utils/Map";
@@ -6,15 +8,7 @@ import Map from "./components/utils/Map";
 function App() {
   return (
     <>
-      {/* Example 1 */}
-      {/* <Map></Map> */}
-
-      {/* Example 2 */}
-      {/* <Dialogue></Dialogue> */}
-
-      {/* Example 3 */}
-      <Scroller></Scroller>
-      {/* Example 4 */}
+      <Comments postId="4"></Comments>
     </>
   );
 }
