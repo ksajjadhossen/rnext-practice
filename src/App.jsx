@@ -1,14 +1,16 @@
+import { useState } from "react";
 import "./App.css";
-import Animation from "./components/Animation";
-import Comments from "./components/Comments";
-import Dialogue from "./components/Dialogue";
-import Scroller from "./components/Scroller";
-import Map from "./components/utils/Map";
+import { Playground } from "./components/Playground";
 
 function App() {
+  const [show, setShow] = useState(false);
   return (
     <>
-      <Comments postId="4"></Comments>
+      <button onClick={() => setShow(!show)}>
+        {show ? "Unmount" : "Mount"} the component
+      </button>
+      {show && <hr />}
+      {show && <Playground />}
     </>
   );
 }
