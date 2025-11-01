@@ -1,16 +1,10 @@
-import { useState } from "react";
 import "./App.css";
-import { Playground } from "./components/Playground";
+import Example1 from "./components/Example1";
 
 function App() {
-  const [show, setShow] = useState(false);
   return (
     <>
-      <button onClick={() => setShow(!show)}>
-        {show ? "Unmount" : "Mount"} the component
-      </button>
-      {show && <hr />}
-      {show && <Playground />}
+      <Example1></Example1>
     </>
   );
 }
